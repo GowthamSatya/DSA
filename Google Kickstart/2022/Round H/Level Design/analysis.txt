@@ -1,0 +1,40 @@
+We have been given a permutation P of length N and are asked to find minimum swaps required to form at least one permutation cycle of length K, for all 1≤K≤N. Here are a few steps required to solve this problem.
+
+Step 1: Find the existing permutation cycles.
+Considering permutation cycle as a graph, perform DFS from each unvisited node and keep traversing till we get a visited node. Maintain the cycle length for each DFS. At the end of this we have an array representing cycle lengths of the permutation cycles. Alternative approach is to use DSU to find all cycles and respective lengths.
+Let us name the cycle size array as cycle_sizes.
+
+
+Step 2: Analyze the effect of a swap in the permutation.
+Two types of swaps are possible:
+
+Type 1: Swap within the same cycle, the cycle will be broken into two smaller cycles.
+Type 2: Swap two elements from different cycles, both the cycles will end up merging. The length of the new cycle will be the sum of lengths of two cycles merged.
+Step 3: Optimal merging for each cycle length.
+Now we know the existing cycle lengths and the effect of a swap, we need to find the optimal strategy to form a cycle of length K in the minimum number of swaps.
+Now the problem essentially boils down to optimally selecting the cycles to merge/break to form a cycle of length K. There are two potential strategies:
+1) We can sort the cycle lengths in descending order by length and then merge the cycles starting from the maximum one till we get a final cycle of length >K and then use one more swap to turn that into exactly K. The number of steps required here is an upper bound on the optimal number of swaps and the lower bound will be at least one less than the upper bound (forming cycle of exact length K). Time complexity of greedy approach is O(N) since sorting the permutation cycles itself will take O(N) using Counting sort.
+2) We can apply dynamic programming to optimally find minimum number of cycles required to form a cycle of size exactly K.
+The optimal strategy is to choose the minimum of the two strategies.
+
+Test Set 1
+For each of the cycles we do have the option either to include it in the optimal set of cycles to be merged or leave it. This problem is now very similar to the knapsack problem.
+Let dp(i,j) be the minimum number of swaps required to form a cycle of length j using cycles from indices (1,i).
+dp(i,j)=min(dp(i−1,j),1+dp(i−1,j−cycle_sizes(i)))
+S=cycle_sizes.size().
+We need to populate the dp table with the above mentioned recurrence relation. dp(S,K) is the answer from the knapsack approach and min(1+dp(S,t)) for all K+1≤t≤N is the answer from greedy approach. Final answer will be minimum of both the values.
+Time complexity will be O(N2) to populate the dp table.
+
+Test Set 2
+Let X be the number of length wise distinct cycles, minimum number of nodes required to form all the X cycles is ∑Xi=1i. As per the constraints, ∑Xi=1i≤N.
+Hence there will be O(N−−√) number of length wise distinct cycles. Using this fact we can speed up our knapsack-based solution from test set 1.
+Let us name the distinct cycle size array as distinct_cycle_sizes and corresponding occurrences as cnt. Let dp(i,j) be the minimum number of swaps required to form a cycle of length j using cycles from indices (1,i) where 1≤i≤distinct_cycle_sizes.size().
+
+Hence, in order to calculate dp(i,j) (where i is the index of the current value x being processed and j is the cost), we only need these states dp(i−1,j−x),dp(i−1,j−2×x),…,dp(i−1,j−cnt(i)×x). For each distinct cycle size, store its number of occurrences and then the idea to process v(occurrences of each cycle) items of value x is to treat the problem as a sliding window minimum problem.
+Hence, the recurrence becomes dp(i,j)=min(v+dp(i−1,j−v×distinct_cycle_sizes[i]),v∈[0,cnt(i)]
+
+Then, if we consider the values jmodk, you will notice that for a fixed remainder it just becomes a range min query on a 'sliding window' interval (namely, the left bound of the interval may only move to the right each query), which can be computed in amortized constant time using a monotonic deque.
+
+So, now for each i∈[1,N], the optimal answer =min(dp(items_count,i),dp(items_count,j)+1) where j>i.
+
+Complexity will be O(NN−−√) to populate the dp table.

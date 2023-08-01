@@ -1,0 +1,1 @@
+{"name":"Local: allEqual","url":"c:\\Users\\satya\\Desktop\\Workspace V\\DSA-Workspace\\Problem-16\\allEqual.cpp","tests":[{"id":1644678707196,"input":"2\n3\n1 3 1\n3\n2 2 2","output":"2\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\satya\\Desktop\\Workspace V\\DSA-Workspace\\Problem-16\\allEqual.cpp","group":"local","local":true}

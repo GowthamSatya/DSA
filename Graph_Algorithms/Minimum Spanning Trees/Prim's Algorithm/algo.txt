@@ -1,0 +1,23 @@
+Prim's Algorithm for minimum spanning tree
+-- Greedy Algorithm
+-- Used for weighted undirected graphs
+-- We use priority queue data structure
+
+
+Terms
+== MST set = [] -->  all nodes that are included in MST
+== Active Edge = edge from vertex in MST Set to set V
+== MST Edge = edge that has been included in MST tree
+
+
+==== Algorithm ====
+
+1. Start from any source vertex
+2. Find all the active edges from that source
+3. Out of all active edges we pick the one with least weight
+   --> add that vertex to MST set
+   --> add active edges from that new source to active edge list
+4. Repeat step-2 until all vertices are added to MST set.
+
+== Time Complexity -> O(ElogV) E -> edges
+                               V -> vertices

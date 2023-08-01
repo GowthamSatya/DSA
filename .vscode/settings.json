@@ -1,0 +1,10 @@
+{
+	"files.associations": {
+		"iostream": "cpp",
+		"ostream": "cpp",
+		"vector": "cpp",
+		"*.tcc": "cpp"
+	},
+	"python.analysis.typeCheckingMode": "basic",
+	"python.formatting.provider": "yapf"
+}

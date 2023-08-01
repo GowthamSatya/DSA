@@ -1,0 +1,136 @@
+BFS 
+https://practice.geeksforgeeks.org/problems/bfs-traversal-of-graph/1?page=1&category[]=Graph&sortBy=submissions
+TC -> O(V)+O(E)
+
+
+DFS
+https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1?page=1&category[]=Graph&sortBy=submissions
+TC -> O(V) + O(E) 
+SC -> O(N) for visited array
+
+
+Number of Provinces - Number of different connected components of graph
+https://practice.geeksforgeeks.org/problems/number-of-provinces/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=number_of_provinces
+SC -> O(N) visited array 
+TC -> O(N) + O(V+2E)  N= number of components
+
+
+Number of Islands
+https://practice.geeksforgeeks.org/problems/find-the-number-of-islands/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=find_the_number_of_islands
+SC -> O(N^2) for visited and queue
+TC -> O(row * col * 9) => O(N^2) Approx.
+
+
+Flood Fill
+https://practice.geeksforgeeks.org/problems/flood-fill-algorithm1856/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=flood-fill-algorithm
+SC -> O(N*M) for ans + O(N*M) for recursion stack
+TC -> O(4*N*M) loop and traversal
+
+
+Rotten Oranges
+https://practice.geeksforgeeks.org/problems/rotten-oranges2536/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=rotten_oranges 
+SC -> O(N*M) for ans
+TC -> O(N*M) + O(4*N*M) for iteration
+
+
+Cycle Detection using BFS
+https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=detect-cycle-in-an-undirected-graph
+SC -> O(N) for queue and visited
+TC -> O(N + 2*E)
+
+
+Cycle Detection using DFS
+https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=detect-cycle-in-an-undirected-graph
+SC -> O(N) for queue and visited
+TC -> O(N + 2*E) + O(N)
+
+
+Distance of nearest cell having 1
+https://practice.geeksforgeeks.org/problems/distance-of-nearest-cell-having-1-1587115620/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=distance-of-nearest-cell-having-1
+SC -> O(n*m)
+TC -> O(n*m)
+
+Replace O's with X's
+https://practice.geeksforgeeks.org/problems/replace-os-with-xs0052/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=replace-os-with-xs
+SC -> O(n*m) for vis array
+TC -> O(n*m) for whole matrix traversal
+
+
+Count Number of Enclaves
+https://practice.geeksforgeeks.org/problems/number-of-enclaves/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=number-of-enclaves
+========== SC, TC are same as the prev question ===========
+
+
+Number of distinct islands
+https://practice.geeksforgeeks.org/problems/number-of-distinct-islands/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=number-of-distinct-islands
+SC -> O(n*m) for vis matrix
+TC -> O(n * m * log(n*m)) log for set insertion
+
+
+Bi-partite graph using BFS
+https://practice.geeksforgeeks.org/problems/bipartite-graph/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=bipartite-graph
+SC -> O(n) for color array
+TC -> O(V) + O(E)
+
+
+Bi-partite graph using DFS
+https://practice.geeksforgeeks.org/problems/bipartite-graph/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=bipartite-graph
+====== SC and TC are same as the DFS ============
+ 
+
+Detect cycle in a directed graph
+https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=detect-cycle-in-a-directed-graph
+SC -> O(2*N) for pathvis and vis array 
+TC -> O(V+E)
+
+
+Eventual Safe states
+https://practice.geeksforgeeks.org/problems/eventual-safe-states/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=eventual-safe-states
+SC ->
+TC ->
+
+
+Topological Sorting DFS
+https://practice.geeksforgeeks.org/problems/topological-sort/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=topological-sort
+SC -> O(n) for vis and O(n) for stack
+TC -> O(V+E) 
+
+
+Topological Sorting BFS (Kahn's Algorithm)
+https://practice.geeksforgeeks.org/problems/topological-sort/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=topological-sort
+SC ->
+TC ->
+
+
+Detect cycle in a directed graph using BFS
+https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=detect-cycle-in-a-directed-graph
+SC -> O(2*N) for pathvis and vis array 
+TC -> O(V+E)
+
+
+Prerequisite Tasks (App. of Topological Sort)
+https://practice.geeksforgeeks.org/problems/prerequisite-tasks/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=prerequisite-tasks
+
+
+Course Schedule (App. of Topological Sort)
+https://practice.geeksforgeeks.org/problems/course-schedule/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=course-schedule
+
+
+Find Eventual Safe states
+https://practice.geeksforgeeks.org/problems/eventual-safe-states/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=eventual-safe-states
+
+
+Alien Dictionary
+https://practice.geeksforgeeks.org/problems/alien-dictionary/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=alien-dictionary
+
+
+Shortest path in directed acyclic graph
+https://practice.geeksforgeeks.org/problems/shortest-path-in-undirected-graph/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=direct-acyclic-graph
+
+
+
+
+
+
+
+

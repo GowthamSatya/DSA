@@ -1,0 +1,1 @@
+{"name":"Local: hardCash","url":"c:\\Users\\satya\\Desktop\\Workspace V\\DSA-Workspace\\Problem-18\\hardCash.cpp","tests":[{"id":1644763660185,"input":"2\n5 7\n1 14 4 41 1\n3 9\n1 10 19","output":"5\n3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\satya\\Desktop\\Workspace V\\DSA-Workspace\\Problem-18\\hardCash.cpp","group":"local","local":true}

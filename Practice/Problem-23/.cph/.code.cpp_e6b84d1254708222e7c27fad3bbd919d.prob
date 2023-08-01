@@ -1,0 +1,1 @@
+{"name":"Local: code","url":"c:\\Users\\satya\\Desktop\\Workspace V\\DSA-Workspace\\Problem-23\\code.cpp","tests":[{"id":1652458412467,"input":"2\n5\n1 2 3 1 2\n4\n1 2 2 3","output":"2\n-1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\satya\\Desktop\\Workspace V\\DSA-Workspace\\Problem-23\\code.cpp","group":"local","local":true}

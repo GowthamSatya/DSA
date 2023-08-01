@@ -1,0 +1,5 @@
+Floyd Warshalls All Pair Shortest Path Algorithm
+-- O(n^3) Time Complexity
+-- Dynamic Programming
+-- works with negative edges 
+-- Can detect negative cycles too
